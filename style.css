@@ -1,31 +1,106 @@
-.ulNav {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	overflow: hidden;
-	background-color: #98FB98;
-}
-		
-.liNav {
-	float: left;
+/*-- Tag Selectors --*/
+
+html {
+	margin: auto;
+	width: 50%;
 }
 
-.liNav a {
-	display: block;
-	padding: 10px;
-	color: black;
-	text-align: center;
+body {
+	background-color: #AFEEEE; /*Pale turquoise */
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+
+footer {
+	width: 100%;
+	background-color: #D3D3D3; /*Light grey*/
+}
+
+li a {
+	text-decoration: none;
+}
+
+/*-- Class Selectors --*/
+
+.title  {
+	margin: auto;
+	width: 50%;
 	padding: 15px;
 }
 
-.liNav a.active {
-	background-color: orange;
-	color: black;
+.nav {
+	overflow: hidden;
+	background-color: #98FB98; /*Pale green*/
 }
 
-.liNav a:hover:not(.active) {
-	background-color: orange;
-	color: black;
+.nav li a{
+	display: block;
+	color: #000000; /*Black*/
+	text-align: centre;
+	padding: 14px 16px;
 }
 
+.nav li a:hover {
+	background-color: #FFB6C1; /*Light pink*/
+}
 
+.active {
+	background-color: #FFA07A; /*Light salmon*/
+}
+
+.fLeft {
+	float: left;
+}
+
+.fRight {
+	float: right;
+}
+
+.trend {
+	text-align: right;
+}
+
+.footDiv {
+	float: left;
+	text-decoration: none;
+	margin: auto;
+	background-color: #D3D3D3; /*Light grey*/
+	position: bottom:
+}
+
+.s {
+	width: 34%;
+}
+
+.t {
+	width: 22%;
+}
+
+.menu {
+	margin: auto;
+	width: 25%;
+	background-color: #EEE8AA; /*Golden rod*/
+	position: sticky;
+	top: 0;
+}
+
+.menu li {
+	display: block;
+	text-align: center;
+	padding: 10px 16px;
+}
+
+.products {
+	margin: auto;
+	width: 75%;
+	background-color: #40E0D0; /*Turquoise */
+}
