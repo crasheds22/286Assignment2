@@ -74,7 +74,9 @@ li a {
 	text-decoration: none;
 	margin: auto;
 	background-color: #D3D3D3; /*Light grey*/
-	position: bottom:
+	position: bottom;
+	display: block;
+	padding: 5px 2px;
 }
 
 .s {
@@ -82,8 +84,16 @@ li a {
 }
 
 .t {
-	width: 22%;
+	width: 21%;
 }
+
+.u {
+	background-color: #EEE8AA;
+}
+
+.v {
+	background-color: #40E0D0;
+)}
 
 .menu {
 	margin: auto;
@@ -104,3 +114,10 @@ li a {
 	width: 75%;
 	background-color: #40E0D0; /*Turquoise */
 }
+
+.memForm {
+	float: left;
+	margin: auto;
+	width: 50%;
+}
+
