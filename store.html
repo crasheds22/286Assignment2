@@ -29,29 +29,55 @@
 			<input type="reset" value="Reset"/>
 		</form>
 	</div>
+	<br />
 	
-	<div class='searchmenu'>
+	<div class='searchmenu fLeft'>
+		<ul class='categoryMenu'>
+			<li id='Hats' onclick='catStore(this.id)'>Hats</li>
+			<li id='Belts' onclick='catStore(this.id)'>Belts</li>
+			<li id='Watches' onclick='catStore(this.id)'>Watches</li>
+			<li id='Pants' onclick='catStore(this.id)'>Pants</li>
+			<li id='Shoes' onclick='catStore(this.id)'>Shoes</li>
+			<li id='Shirts' onclick='catStore(this.id)'>Shirts</li>
+			<li id='Jumpers' onclick='catStore(this.id)'>Jumpers</li>
+			<li id='Sunglasses' onclick='catStore(this.id)'>Sunglasses</li>
+		</ul>
+		<ul class='coloursMenu'>
+			<li id='Black' onclick='catStore(this.id)'>Black</li>
+			<li id='Brown' onclick='catStore(this.id)'>Brown</li>
+			<li id='Blue' onclick='catStore(this.id)'>Blue</li>
+			<li id='Green' onclick='catStore(this.id)'>Green</li>
+			<li id='Grey' onclick='catStore(this.id)'>Grey</li>
+			<li id='Pink' onclick='catStore(this.id)'>Pink</li>
+			<li id='Purple' onclick='catStore(this.id)'>Purple</li>
+			<li id='Red' onclick='catStore(this.id)'>Red</li>
+			<li id='White' onclick='catStore(this.id)'>White</li>
+			<li id='Teal' onclick='catStore(this.id)'>Teal</li>
+		</ul>
+	</div>
+	
+	<!--<div class='searchmenu fLeft'>
 		<form name="CategoryForm" action=" ">
-			<input class='CatButton' type="button" name="HatsButton" value="Hats" onclick="catStore(this.value)"/>
-			<input class='CatButton' type="button" name="BeltButton" value="Belts" onclick="catStore(this.value)"/>
-			<input class='CatButton' type="button" name="WatchesButton" value="Watches" onclick="catStore(this.value)"/>
-			<input class='CatButton' type="button" name="PantsButton" value="Pants" onclick="catStore(this.value)"/>
-			<input class='CatButton' type="button" name="ShoesButton" value="Shoes" onclick="catStore(this.value)"/>
-			<input class='CatButton' type="button" name="ShirtsButton" value="Shirts" onclick="catStore(this.value)"/>
-			<input class='CatButton' type="button" name="JumpersButton" value="Jumpers" onclick="catStore(this.value)"/>
-			<input class='CatButton' type="button" name="SunglassessButton" value="Sunglasses" onclick="catStore(this.value)"/>
+			<input class='CatButton' type="button" name="HatsButton" value="Hats" onclick="catStore(this.value)"/><br />
+			<input class='CatButton' type="button" name="BeltButton" value="Belts" onclick="catStore(this.value)"/><br />
+			<input class='CatButton' type="button" name="WatchesButton" value="Watches" onclick="catStore(this.value)"/><br />
+			<input class='CatButton' type="button" name="PantsButton" value="Pants" onclick="catStore(this.value)"/><br />
+			<input class='CatButton' type="button" name="ShoesButton" value="Shoes" onclick="catStore(this.value)"/><br />
+			<input class='CatButton' type="button" name="ShirtsButton" value="Shirts" onclick="catStore(this.value)"/><br />
+			<input class='CatButton' type="button" name="JumpersButton" value="Jumpers" onclick="catStore(this.value)"/><br />
+			<input class='CatButton' type="button" name="SunglassessButton" value="Sunglasses" onclick="catStore(this.value)"/><br />
 		</form>
 		<form name="ColourForm" action=" ">
-			<input class='CatButton' type="button" name="BlackButton" value="Black" onclick="catStore(this.value)"/>
-			<input class='CatButton' type="button" name="BrownButton" value="Brown" onclick="catStore(this.value)"/>
-			<input class='CatButton' type="button" name="BlueButton" value="Blue" onclick="catStore(this.value)"/>
-			<input class='CatButton' type="button" name="GreenButton" value="Green" onclick="catStore(this.value)"/>
-			<input class='CatButton' type="button" name="GreyButton" value="Grey" onclick="catStore(this.value)"/>
-			<input class='CatButton' type="button" name="PinkButton" value="Pink" onclick="catStore(this.value)"/>
-			<input class='CatButton' type="button" name="PurpleButton" value="Purple" onclick="catStore(this.value)"/>
-			<input class='CatButton' type="button" name="RedButton" value="Red" onclick="catStore(this.value)"/>
-			<input class='CatButton' type="button" name="WhiteButton" value="White" onclick="catStore(this.value)"/>
-			<input class='CatButton' type="button" name="TealButton" value="Teal" onclick="catStore(this.value)"/>
+			<input class='CatButton' type="button" name="BlackButton" value="Black" onclick="catStore(this.value)"/><br />
+			<input class='CatButton' type="button" name="BrownButton" value="Brown" onclick="catStore(this.value)"/><br />
+			<input class='CatButton' type="button" name="BlueButton" value="Blue" onclick="catStore(this.value)"/><br />
+			<input class='CatButton' type="button" name="GreenButton" value="Green" onclick="catStore(this.value)"/><br />
+			<input class='CatButton' type="button" name="GreyButton" value="Grey" onclick="catStore(this.value)"/><br />
+			<input class='CatButton' type="button" name="PinkButton" value="Pink" onclick="catStore(this.value)"/><br />
+			<input class='CatButton' type="button" name="PurpleButton" value="Purple" onclick="catStore(this.value)"/><br />
+			<input class='CatButton' type="button" name="RedButton" value="Red" onclick="catStore(this.value)"/><br />
+			<input class='CatButton' type="button" name="WhiteButton" value="White" onclick="catStore(this.value)"/><br />
+			<input class='CatButton' type="button" name="TealButton" value="Teal" onclick="catStore(this.value)"/><br />
 		</form>
 	</div>
 	
@@ -63,7 +89,8 @@
 	<!-- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- -->
 	
 	<footer>
-		<div class='footDiv t'>
+	<div class='bottom fLeft'>
+		<div class='footDiv t fLeft'>
 			<ul>
 				<li><a href='./home.html'>Home</a></li>
 				<li><a href='./store.html'>Shop</a></li>
@@ -73,7 +100,7 @@
 			</ul>
 		</div>
 		
-		<div class='footDiv s'>
+		<div class='footDiv s fLeft'>
 			<ul>
 				<li>admin@chadwear.com.au</li>
 				<li>PO Box: 582 Liplapper lane</li>
@@ -83,7 +110,7 @@
 			</ul>
 		</div>
 		
-		<div class='footDiv t'>
+		<div class='footDiv t fLeft'>
 			<ul>
 				<li>Site help</li>
 				<li>Site map</li>
@@ -93,13 +120,14 @@
 			</ul>
 		</div>
 		
-		<div class='footDiv t'>
+		<div class='footDiv t fLeft'>
 			<img src='./images/logo.jpg' alt='Logo' /><br />
 			<br />
 			<br />
 			<br />	
 			<img src='./images/partners.jpg' alt='Partners' />
 		</div>
+	</div>
 	</footer>
 </body>
 </html>

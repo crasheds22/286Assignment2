@@ -76,7 +76,6 @@ li a {
 }
 
 .footDiv {
-	float: left;
 	text-decoration: none;
 	margin: auto;
 	background-color: #D3D3D3; /*Light grey*/
@@ -92,8 +91,8 @@ li a {
 }
 
 .products {
-	margin: 0 auto;
-	width: 100%;
+	margin: auto;
+	width: 75%;
 	text-align: center;
 }
 
@@ -128,4 +127,31 @@ li a {
 
 .ATC{
 	padding-bottom: 5px;
+}
+
+.searchmenu {
+	margin: auto;
+	width: 25%;
+}
+
+.searchmenu ul {
+	border: 1px solid #000000;
+}
+
+.searchmenu ul li {
+	background-color: #AFEEEE;
+	overflow: hidden;
+	display: block;
+	color: #000000;
+	text-align: center;
+	padding: 14px 16px;
+	border-bottom: 1px solid #000000;
+}
+
+.searchmenu ul li:last-child {
+	border-bottom: none;
+}
+
+.bottom {
+	width: 100%;
 }
