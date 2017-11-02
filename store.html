@@ -4,15 +4,17 @@
 	<title>Chadwear.com.au</title>
 	
 	<link rel='stylesheet' type='text/css' href='./css/style.css' />
+	<script type="text/javascript" src="js/StoreScript.js">
+	</script>
 </head>
 <body>
 	<header>
 		<h1 class='title'>Chadwear.com.au</h1>
 		
-		<div>
-			<ul class='nav'>
+		<div class='nav'>
+			<ul >
 				<li><a class='fLeft' href='./home.html'>Home</a></li>
-				<li><a class='fLeft active'>Store</a></li>
+				<li id="store"><a class='fLeft active' href='./store.html'>Store</a></li>
 				<li><a class='fLeft' href='./contact.html'>Contact</a></li>
 				<li><a class='fRight' href='./members.html'>Members</a></li>
 				<li><a class='fRight' href='./cart.html'>Your Cart</a></li>
@@ -20,58 +22,42 @@
 		</div>
 	</header>
 	
-	<!-- ---- ---- ---- ---- Main shop body ---- ---- ---- ---- -->
-	
-	<div class='menu fLeft'>
-		<ul>
-			<li>Hats</li>
-			<li>T-shirts</li>
-			<li>Jumpers</li>
-			<li>Pants</li>
-			<li>Shoes</li>
-			<li>Watches</li>
-			<li>Sunglasses</li>
-			<li>Belt</li>
-		</ul>
+	<div class='searchbar'>
+		<form name="searchform" action=" ">
+			<input type="text" name="GeneralSearch" id="GeneralSearch" size="30" value="Find what you want here..."/>
+			<input type="button" name="SubmitButton" value="Search" onclick="return validateMyForm(document.getElementById('GeneralSearch').value)"/>
+			<input type="reset" value="Reset"/>
+		</form>
 	</div>
 	
-	<div class='products fLeft'>
-		<p>Here is where our products will go</p>
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		
+	<div class='searchmenu'>
+		<form name="CategoryForm" action=" ">
+			<input class='CatButton' type="button" name="HatsButton" value="Hats" onclick="catStore(this.value)"/>
+			<input class='CatButton' type="button" name="BeltButton" value="Belts" onclick="catStore(this.value)"/>
+			<input class='CatButton' type="button" name="WatchesButton" value="Watches" onclick="catStore(this.value)"/>
+			<input class='CatButton' type="button" name="PantsButton" value="Pants" onclick="catStore(this.value)"/>
+			<input class='CatButton' type="button" name="ShoesButton" value="Shoes" onclick="catStore(this.value)"/>
+			<input class='CatButton' type="button" name="ShirtsButton" value="Shirts" onclick="catStore(this.value)"/>
+			<input class='CatButton' type="button" name="JumpersButton" value="Jumpers" onclick="catStore(this.value)"/>
+			<input class='CatButton' type="button" name="SunglassessButton" value="Sunglasses" onclick="catStore(this.value)"/>
+		</form>
+		<form name="ColourForm" action=" ">
+			<input class='CatButton' type="button" name="BlackButton" value="Black" onclick="catStore(this.value)"/>
+			<input class='CatButton' type="button" name="BrownButton" value="Brown" onclick="catStore(this.value)"/>
+			<input class='CatButton' type="button" name="BlueButton" value="Blue" onclick="catStore(this.value)"/>
+			<input class='CatButton' type="button" name="GreenButton" value="Green" onclick="catStore(this.value)"/>
+			<input class='CatButton' type="button" name="GreyButton" value="Grey" onclick="catStore(this.value)"/>
+			<input class='CatButton' type="button" name="PinkButton" value="Pink" onclick="catStore(this.value)"/>
+			<input class='CatButton' type="button" name="PurpleButton" value="Purple" onclick="catStore(this.value)"/>
+			<input class='CatButton' type="button" name="RedButton" value="Red" onclick="catStore(this.value)"/>
+			<input class='CatButton' type="button" name="WhiteButton" value="White" onclick="catStore(this.value)"/>
+			<input class='CatButton' type="button" name="TealButton" value="Teal" onclick="catStore(this.value)"/>
+		</form>
+	</div>
+	
+	<!-- ---- ---- ---- ---- Main shop body ---- ---- ---- ---- -->
+	
+	<div class='products fLeft' id="ProductDiv">
 	</div>
 	
 	<!-- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- -->
