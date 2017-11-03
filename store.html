@@ -24,12 +24,11 @@
 	
 	<div class='searchbar'>
 		<form name="searchform" action=" ">
-			<input type="text" name="GeneralSearch" id="GeneralSearch" size="30" value="Find what you want here..."/>
+			<input type="text" name="GeneralSearch" id="GeneralSearch" size="30" placeholder="Find what you want here..."/>
 			<input type="button" name="SubmitButton" value="Search" onclick="return validateMyForm(document.getElementById('GeneralSearch').value)"/>
 			<input type="reset" value="Reset"/>
 		</form>
 	</div>
-	<br />
 	
 	<div class='searchmenu fLeft'>
 		<ul class='categoryMenu'>
@@ -42,7 +41,7 @@
 			<li id='Jumpers' onclick='catStore(this.id)'>Jumpers</li>
 			<li id='Sunglasses' onclick='catStore(this.id)'>Sunglasses</li>
 		</ul>
-		<ul class='coloursMenu'>
+		<ul>
 			<li id='Black' onclick='catStore(this.id)'>Black</li>
 			<li id='Brown' onclick='catStore(this.id)'>Brown</li>
 			<li id='Blue' onclick='catStore(this.id)'>Blue</li>
@@ -54,31 +53,6 @@
 			<li id='White' onclick='catStore(this.id)'>White</li>
 			<li id='Teal' onclick='catStore(this.id)'>Teal</li>
 		</ul>
-	</div>
-	
-	<!--<div class='searchmenu fLeft'>
-		<form name="CategoryForm" action=" ">
-			<input class='CatButton' type="button" name="HatsButton" value="Hats" onclick="catStore(this.value)"/><br />
-			<input class='CatButton' type="button" name="BeltButton" value="Belts" onclick="catStore(this.value)"/><br />
-			<input class='CatButton' type="button" name="WatchesButton" value="Watches" onclick="catStore(this.value)"/><br />
-			<input class='CatButton' type="button" name="PantsButton" value="Pants" onclick="catStore(this.value)"/><br />
-			<input class='CatButton' type="button" name="ShoesButton" value="Shoes" onclick="catStore(this.value)"/><br />
-			<input class='CatButton' type="button" name="ShirtsButton" value="Shirts" onclick="catStore(this.value)"/><br />
-			<input class='CatButton' type="button" name="JumpersButton" value="Jumpers" onclick="catStore(this.value)"/><br />
-			<input class='CatButton' type="button" name="SunglassessButton" value="Sunglasses" onclick="catStore(this.value)"/><br />
-		</form>
-		<form name="ColourForm" action=" ">
-			<input class='CatButton' type="button" name="BlackButton" value="Black" onclick="catStore(this.value)"/><br />
-			<input class='CatButton' type="button" name="BrownButton" value="Brown" onclick="catStore(this.value)"/><br />
-			<input class='CatButton' type="button" name="BlueButton" value="Blue" onclick="catStore(this.value)"/><br />
-			<input class='CatButton' type="button" name="GreenButton" value="Green" onclick="catStore(this.value)"/><br />
-			<input class='CatButton' type="button" name="GreyButton" value="Grey" onclick="catStore(this.value)"/><br />
-			<input class='CatButton' type="button" name="PinkButton" value="Pink" onclick="catStore(this.value)"/><br />
-			<input class='CatButton' type="button" name="PurpleButton" value="Purple" onclick="catStore(this.value)"/><br />
-			<input class='CatButton' type="button" name="RedButton" value="Red" onclick="catStore(this.value)"/><br />
-			<input class='CatButton' type="button" name="WhiteButton" value="White" onclick="catStore(this.value)"/><br />
-			<input class='CatButton' type="button" name="TealButton" value="Teal" onclick="catStore(this.value)"/><br />
-		</form>
 	</div>
 	
 	<!-- ---- ---- ---- ---- Main shop body ---- ---- ---- ---- -->
@@ -112,11 +86,11 @@
 		
 		<div class='footDiv t fLeft'>
 			<ul>
-				<li>Site help</li>
-				<li>Site map</li>
-				<li>Deliveries</li>
-				<li>Orders</li>
-				<li>Refunds</li>
+				<li><a href='./siteHelp.html' target='_blank'>Site help</a></li>
+				<li><a href='./sitemap.xml' target='_blank'>Site map</a></li>
+				<li><a href='./siteHelp.html#del' target='_blank'>Deliveries</a></li>
+				<li><a href='./siteHelp.html#ord' target='_blank'>Orders</a></li>
+				<li><a href='./siteHelp.html#ref' target='_blank'>Refunds</a></li>
 			</ul>
 		</div>
 		

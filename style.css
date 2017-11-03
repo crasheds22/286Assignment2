@@ -30,6 +30,11 @@ li a {
 	text-decoration: none;
 }
 
+textarea {
+	height: 126px;
+	width: 167px;
+}
+
 /*-- Class Selectors --*/
 
 .title  {
@@ -76,6 +81,7 @@ li a {
 }
 
 .footDiv {
+	float: left;
 	text-decoration: none;
 	margin: auto;
 	background-color: #D3D3D3; /*Light grey*/
@@ -91,7 +97,7 @@ li a {
 }
 
 .products {
-	margin: auto;
+	margin: 0 auto;
 	width: 75%;
 	text-align: center;
 }
@@ -117,6 +123,33 @@ li a {
 	padding-top: 5px;
 }
 
+.searchmenu {
+	margin: auto;
+	width: 25%;
+	background-color: #AFEEEE;
+}
+
+.searchmenu ul {
+	border: 1px solid #000000;
+}
+
+.searchmenu ul li{
+	display: block;
+	color: #000000;
+	overflow: hidden;
+	text-align: center;
+	padding: 14px 16px;
+	border-bottom: 1px solid #000000;
+}
+
+.searchmenu ul li:hover{
+	background-color: #FFA07A;
+}
+
+.bottom {
+	width: 100%;
+}
+
 .caption {
 	display: block;	
 }
@@ -129,29 +162,45 @@ li a {
 	padding-bottom: 5px;
 }
 
-.searchmenu {
-	margin: auto;
+.forms{
+	height: 100%;
+}
+
+.reg{
+	height:320px;
+	float: left;
+	width: 50%;
+}
+
+.staff{
+	height: 350px;
+	float: left;
+	width: 50%;	
+}
+
+.exist{
+	height:320px;
+	float: left;
+	width: 50%;	
+}
+
+.logout{
+	float: right;	
+}
+
+.fourcol{
+	float: left;
 	width: 25%;
 }
 
-.searchmenu ul {
-	border: 1px solid #000000;
+.orderprice{
+	height: 90px;	
 }
 
-.searchmenu ul li {
-	background-color: #AFEEEE;
-	overflow: hidden;
-	display: block;
-	color: #000000;
-	text-align: center;
-	padding: 14px 16px;
-	border-bottom: 1px solid #000000;
+
+.quatercolumn{
+	float:right;
+	width:25%;
+	height: 100%
 }
 
-.searchmenu ul li:last-child {
-	border-bottom: none;
-}
-
-.bottom {
-	width: 100%;
-}

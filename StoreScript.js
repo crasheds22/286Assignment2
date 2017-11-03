@@ -1,7 +1,6 @@
 document.addEventListener('load', OpenStore(), "once");
 
 
-
 function OpenStore(){
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function () {
@@ -30,7 +29,7 @@ function searchStore(search) {
 }
 
 function catStore(search) {
-	
+
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function () {
 		if (xhr.readyState == 4 && xhr.status == 200){
@@ -66,4 +65,19 @@ function validateMyForm(search){
 	}
 	
 }
+
+function addToCart(product, price){
+	var amount = document.getElementById('amount');
+	var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function () {
+			if (xhr.readyState == 4 && xhr.status == 200){
+			var run = xhr.responseText;
+			alert(run);
+			}
+		}
+		xhr.open("GET", "php/addToCart.php?prod="+product+"&amo="+amount.value+"&pri="+price);
+		xhr.send(null);	
+
+}
+
 
